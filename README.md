@@ -15,6 +15,4 @@ See
 ## Example
 
 ## Package Installation
-```
-$ composer require jamesdordoy/php-forward-chaining
-```
+
