@@ -47,13 +47,7 @@ class Rule{
 	{
 		$language = new ExpressionLanguage();
 
-		if ($language->evaluate($this->condition, $facts)) {
-			return true;
-		} else {
-			return false;
-		}
-
-		return true;
+		return $language->evaluate($this->condition, $facts);
 	}
 
 	public function __toString()

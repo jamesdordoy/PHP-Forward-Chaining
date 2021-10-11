@@ -57,7 +57,7 @@ class InferenceEngine{
     */
 	public function run()
 	{
-		while ($this->goalStatement->getGoalReached() === false) {
+		while (! $this->goalStatement->getGoalReached()) {
 
 			$acceptedRules = $this->ruleManager->getSuitableRules($this->workingMemory->getAllFacts());
 
